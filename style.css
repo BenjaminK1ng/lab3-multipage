@@ -41,7 +41,61 @@ body {
     margin-left: 200px;
     padding: 1px 16px;
     height: 1000px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
   }
+
+  div.contact {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+  }
+
+  input[type=text], textarea {
+    width: 100%;
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;   
+  }
+
+  input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
 
   div.banner {
     transition: 0.6;
@@ -87,6 +141,7 @@ body {
 
     div.content {margin-left: 0;}
     div.services {margin-left: 0;}
+    div.contact {margin-left: 0;}
   }
   
   @media screen and (max-width: 400px) {
