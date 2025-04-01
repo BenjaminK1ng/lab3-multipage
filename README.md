@@ -10,3 +10,6 @@ Some of the services provided by the fictional company in a fictional world.
 
 ## Contact
 Send us a pm.
+
+
+The website employs many standard features of HTML such as the flexbox and media queries from CSS.
