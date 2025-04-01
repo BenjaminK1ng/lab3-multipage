@@ -1,0 +1,97 @@
+
+
+body {
+    display: flex;
+}
+
+.sidebar {
+    transition: 1.2s;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    font-size: 20px;
+  }
+
+.sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+  }
+
+   
+  .sidebar a.active {
+    background-color: #04aa6d;
+    color: white;
+  }
+  
+  .sidebar a:hover:not(.active) {
+
+    transition: 0.3s;
+    background-color: #555;
+    color: white;
+    font-size: 125%;
+  }
+  
+  div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+  }
+
+  div.banner {
+    transition: 0.6;
+    height: 128px;
+    border: 8px solid #04aa6d;
+    padding: 50px;
+    margin: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 125%;
+  }
+
+
+  div.items {
+    display: grid;
+    margin-left: 200px;
+    padding: 1px 16px;
+  }
+
+  div.item {
+
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  div.items img {
+    width: 200px;
+  }
+  div.item img:hover {
+    transition: 0.4s;
+    width: 220px;
+  }
+
+
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+
+    div.content {margin-left: 0;}
+    div.services {margin-left: 0;}
+  }
+  
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
