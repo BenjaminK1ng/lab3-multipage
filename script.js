@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // *******************************
-    // Theme Toggle
-    // *******************************
+    
+
     const themeToggle = document.getElementById("themeToggle");
     if (themeToggle) {
       themeToggle.addEventListener("click", () => {
@@ -9,9 +8,6 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     }
   
-    // *******************************
-    // Real-Time Clock in Header
-    // *******************************
     function updateClock() {
       const clock = document.getElementById("clock");
       if (clock) {
@@ -22,9 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
     setInterval(updateClock, 1000);
     updateClock();
   
-    // *******************************
-    // FAQ Component: Toggle Answer Visibility
-    // *******************************
+    
     document.querySelectorAll(".question").forEach((q) => {
       q.addEventListener("click", () => {
         const answer = q.nextElementSibling;
@@ -34,9 +28,8 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
   
-    // *******************************
-    // Back to Top Button
-    // *******************************
+    
+
     const backToTopBtn = document.getElementById("backToTop");
     if (backToTopBtn) {
       window.addEventListener("scroll", () => {
@@ -51,9 +44,8 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     }
   
-    // *******************************
-    // Fetch API Integration: Load Users
-    // *******************************
+    
+
     const loadUsersBtn = document.getElementById("loadUsersBtn");
     if (loadUsersBtn) {
       loadUsersBtn.addEventListener("click", async () => {
@@ -73,14 +65,13 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     }
   
-    // *******************************
-    // Enhanced Contact Form Validation and Custom Greeting
-    // *******************************
+  
+
     const contactForm = document.querySelector(".contact-form");
     if (contactForm) {
       contactForm.addEventListener("submit", (e) => {
-        e.preventDefault(); // prevent default form submission
-        // Basic validation
+        e.preventDefault();
+        
         const name = contactForm.querySelector("#name").value.trim();
         const email = contactForm.querySelector("#email").value.trim();
         const subject = contactForm.querySelector("#subject").value.trim();
