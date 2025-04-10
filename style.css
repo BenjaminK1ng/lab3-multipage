@@ -1,3 +1,4 @@
+/* Global Styles */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -10,6 +11,34 @@ body {
   background-color: #b8fcbe;
   color: #333333;
 }
+
+
+.dark-mode {
+  background-color: #123b2a;
+  color: #f4f4f4;
+}
+
+.dark-mode .navbar {
+  background-color: #222;
+}
+
+.dark-mode .feature-card {
+  background: #101a0a;
+  padding: 20px;
+  border-radius: 5px;
+  flex: 1;
+  margin: 10px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(206, 205, 205, 0.1);
+}
+
+.dark-mode .faq {
+  margin: 40px 0;
+  padding: 20px;
+  background: #161616;
+  border-radius: 5px;
+}
+
 
 header, main, footer {
   padding: 20px;
@@ -54,8 +83,35 @@ header, main, footer {
 
 .nav-links a:hover,
 .nav-links a:focus {
-  background-color: #555555;
+  background-color: #555;
   border-radius: 5px;
+}
+
+/* Welcome Section */
+.welcome {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.clock {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.theme-toggle {
+  margin-top: 10px;
+  padding: 8px 12px;
+  cursor: pointer;
+  border: none;
+  background-color: #870b92;
+  color: #fff;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.theme-toggle:hover,
+.theme-toggle:focus {
+  background-color: #d400ff;
 }
 
 
@@ -72,7 +128,83 @@ header, main, footer {
   flex: 1;
   margin: 10px;
   text-align: center;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.faq {
+  margin: 40px 0;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+}
+
+.faq-item {
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.question {
+  cursor: pointer;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.question:hover {
+  color: #007bff;
+}
+
+
+.answer {
+  display: none;
+  margin-top: 8px;
+}
+.answer.visible {
+  display: block;
+}
+
+
+.api-users {
+  margin: 40px 0;
+  text-align: center;
+}
+
+.api-users button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #28a745;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.api-users button:hover,
+.api-users button:focus {
+  background-color: #218838;
+}
+
+.api-users ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+
+#backToTop {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  display: none;
+  cursor: pointer;
+  
+  background: url('images/up-arrow.png') no-repeat center;
+  background-size: contain;
+  width: 50px;
+  height: 50px;
+  border: none;
+  outline: none;
 }
 
 
@@ -103,7 +235,7 @@ header, main, footer {
 
 .service-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -115,7 +247,7 @@ header, main, footer {
   background: #fff;
   padding: 20px;
   border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .form-group {
@@ -143,7 +275,7 @@ header, main, footer {
   outline: none;
 }
 
-
+/* Button with subtle animation using @keyframes */
 @keyframes pulse {
   0% {
     box-shadow: 0 0 0 0 rgba(0, 123, 255, 0.7);

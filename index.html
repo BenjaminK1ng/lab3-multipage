@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <title>Gold - Homepage</title>
+  <script src="script.js" defer></script>
 </head>
 <body>
     
@@ -23,6 +24,10 @@
   <header class="welcome">
     <h1>Welcome to The Website!</h1>
     <p>Step lightly...</p>
+    
+    <div id="clock" class="clock"></div>
+    
+    <button id="themeToggle" class="theme-toggle">Toggle Theme</button>
   </header>
   
   <section class="features">
@@ -35,6 +40,31 @@
       <p>Understand the light.</p>
     </div>
   </section>
+
+
+  
+  <section class="faq">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <h3 class="question">What is this website about?</h3>
+      <p class="answer">This is a demo project for learning web development.</p>
+    </div>
+    <div class="faq-item">
+      <h3 class="question">How do I toggle the theme?</h3>
+      <p class="answer">Simply click the "Toggle Theme" button in the header to switch between light and dark mode.</p>
+    </div>
+  </section>
+
+
+
+  <section class="api-users">
+    <h2>Load Users</h2>
+    <button id="loadUsersBtn">Load Users</button>
+    <ul id="userList"></ul>
+  </section>
+
+
+  <button id="backToTop" title="Back to Top"></button>
 
   <footer>
     <p>&copy; 2025 Gold. All rights reserved.</p>
